@@ -9,7 +9,7 @@ function ProtectedRoute({ children }) {
   useEffect(() => {
     const checkAuth = async () => {
       try {
-        await axios.get("http://localhost:3002/api/protected", {
+        await axios.get("https://zerodha-clones-7rvl.onrender.com/api/protected", {
           withCredentials: true,
         });
 
@@ -29,7 +29,7 @@ function ProtectedRoute({ children }) {
   }
 
   if (!authorized) {
-    window.location.href = "http://localhost:5173/login";
+    window.location.href = "https://zerodha-frontend-56tq.onrender.com/login";
     return null;
   }
 

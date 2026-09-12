@@ -13,7 +13,7 @@ function SignUp() {
 
     try {
       const response = await axios.post(
-      "http://localhost:3002/api/auth/signup",
+     "https://zerodha-clones-7rvl.onrender.com/api/auth/signup",
       {
         email,
         username,
@@ -30,6 +30,8 @@ function SignUp() {
       setEmail("");
       setUsername("");
       setPassword("");
+
+      window.location.href = "https://zerodha-dashboard-x0wa.onrender.com";
     } catch (error) {
       alert(error.response?.data?.message || "Signup failed!");
     }

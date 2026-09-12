@@ -14,7 +14,7 @@ function Login() {
 
     try {
      const response = await axios.post(
-      "http://localhost:3002/api/auth/login",
+      "https://zerodha-clones-7rvl.onrender.com/api/auth/login",
       {
         email,
         password,
@@ -28,7 +28,7 @@ function Login() {
 
       alert("Login successful!");
 
-      window.location.href = "http://localhost:5174";    } catch (error) {
+      window.location.href = "https://zerodha-dashboard-x0wa.onrender.com";    } catch (error) {
       alert(error.response?.data?.message || "Login failed!");
     }
   };

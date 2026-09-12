@@ -19,7 +19,7 @@ const signup = async (req, res) => {
         res.cookie("token", token, {
         httpOnly: true,
         sameSite: "lax",
-        secure: false,
+        secure: true,
     });
 
     res.status(201).json({
@@ -66,7 +66,7 @@ const login = async (req, res) => {
       res.cookie("token", token, {
       httpOnly: true,
       sameSite: "lax",
-      secure: false,
+      secure: true,
     });
 
     res.status(200).json({

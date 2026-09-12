@@ -22,7 +22,12 @@ const app = express();
 
 app.use(
   cors({
-    origin: ["http://localhost:5173", "http://localhost:5174"],
+    origin: [
+      "http://localhost:5173",
+      "http://localhost:5174",
+      "https://zerodha-frontend-56tq.onrender.com",
+      "https://zerodha-dashboard-x0wa.onrender.com",
+    ],
     credentials: true,
   })
 );
@@ -43,7 +48,7 @@ app.post("/api/auth/logout", (req, res) => {
   res.clearCookie("token", {
     httpOnly: true,
     sameSite: "lax",
-    secure: false,
+    secure: true,
   });
 
   res.json({ message: "Logout successful" });
