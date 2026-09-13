@@ -15,7 +15,7 @@ const BuyActionWindow = ({ uid }) => {
   const navigate = useNavigate();
   
   const handleBuyClick = () => {
-    axios.post("http://localhost:3002/newOrder", {
+    axios.post("https://zerodha-clones-7rvl.onrender.com/newOrder", {
       name: uid,
       qty: stockQuantity,
       price: stockPrice,
