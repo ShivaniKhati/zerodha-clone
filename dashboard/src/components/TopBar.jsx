@@ -6,14 +6,14 @@ const TopBar = () => {
   const handleLogout = async () => {
     try {
       await axios.post(
-        "http://localhost:3002/api/auth/logout",
+        "https://zerodha-clones-7rvl.onrender.com/api/auth/logout",
         {},
         {
           withCredentials: true,
         }
       );
 
-      window.location.href = "http://localhost:5173/login";
+      window.location.href =  "https://zerodha-frontend-56tq.onrender.com/login";
     } catch (error) {
       console.log(error);
     }
