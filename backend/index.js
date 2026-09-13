@@ -47,7 +47,7 @@ app.get("/api/protected", requireAuth, (req, res) => {
 app.post("/api/auth/logout", (req, res) => {
   res.clearCookie("token", {
     httpOnly: true,
-    sameSite: "lax",
+    sameSite:  "none",
     secure: true,
   });
 
