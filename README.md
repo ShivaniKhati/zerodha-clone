@@ -19,6 +19,17 @@ A full-stack stock trading platform inspired by Zerodha. It has a marketing site
 - Holdings visualised with **Chart.js** (bar and doughnut charts)
 - Landing pages: Home, Products, Pricing, About, Support
 
+## 📸 Screenshots
+
+### Landing Page
+![Landing Page](./landing-page.png)
+
+### Trading Dashboard
+![Dashboard](./dashboard.png)
+
+### Holdings & Charts
+![Holdings](./HoldingCharts.png)
+
 ## Tech Stack
 | Layer | Tech |
 |---|---|
