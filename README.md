@@ -95,4 +95,4 @@ npm run dev      # http://localhost:5174
 
 
 ## Author
-**Shivani Khati**: [LinkedIn](https://linkedin.com/in/shivani-khati](https://www.linkedin.com/in/shivani-khati-74b58a2b3/)) · [GitHub](https://github.com/ShivaniKhati)
+**Shivani Khati**: [LinkedIn](https://www.linkedin.com/in/shivani-khati-74b58a2b3/) · [GitHub](https://github.com/ShivaniKhati)
